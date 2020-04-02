@@ -17,8 +17,8 @@ jobs:
     - name: Build and Publish to Dockerhub
       uses: mr-smithers-excellent/docker-build-push@v2
       with:
-        image: alext234/tensorflow:latest-py3-jupyter
+        image: alext234/tensorflow
         registry: docker.io
-        tag: latest
+        tag: latest-py3-jupyter
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
